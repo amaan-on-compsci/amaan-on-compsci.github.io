@@ -1,11 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/fonts/Nova_Flat/NovaFlat-Regular.ttf" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      @font-face {
+        font-family: "NovaFlat";
+        src: url("/fonts/Nova_Flat/NovaFlat-Regular.ttf") format("truetype");
+      }
+
+      body {
+        font-family: "NovaFlat", "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-y: scroll;
+        background-color: #f2f2f2; /* Light grey background color */
+      }
+
+      nav {
+        background-color: #192f3f;
+        color: rgb(255, 255, 255);
+        padding: 1em;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      .container {
+        width: 80%;
+        margin: 20px auto; 
+        background-color: rgb(255, 255, 255); 
+        border-radius: 15px; 
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+      }
+
+      section {
+        padding: 30px 20px; 
+        text-align: left; 
+      }
+
+      h1 {
+        color: #000000;
+        margin-bottom: 20px; 
+      }
+
+      p {
+        line-height: 1.6; 
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul li {
+        margin-bottom: 10px;
+      }
+
+      footer {
+        background-color: #192f3f;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+
+      .profile-container {
+        text-align: center;
+        position: relative;
+      }
+
+      .profile-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin-top: 20px;
+      }
+
+      .skills-container,
+      .project-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .project-container img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px;
+        border-radius: 15px;
+      }
+    </style>
+    <title>Amaan</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#volunteering">Volunteering</a></li>
+        <li><a href="#socials">Socials</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <section id="about">
+        <h1>Welcome to my humble personal website! :)</h1>
+        <div class="profile-container">
+          <img src="images/PFP.jpeg" alt="Amaan's Picture" />
+        </div>
+        <p>
+          My full name is Mohammad Amaan Khan. I was born on the 18th of August,
+          2003 in India within a cozy hillstation called Dehradun and raised in
+          the scorching heat of Oman where I went to school. Currently pursuing
+          a Bachelor's in Computer Science at Simon Fraser University, British
+          Columbia, Canada. I like working self-disciplinary activities like
+          going to the gym and reading, and I play video games from time to
+          time.
+        </p>
+      </section>
+      <section id="skills">
+        <h1>Skills</h1>
+        <div class="skills-container">
+        </div>
+        <p>
+          C/C++ | Python | Java | HTML/CSS | JavaScript | React.js | <br />
+          Self-motivated, determined, tenacious. Well acquainted with
+          technology.
+        </p>
+      </section>
+      <section id="projects">
+        <h1>Projects</h1>
+        <div class="project-container">
+          <p>
+            <a
+              href="https://github.com/amaan-on-compsci/ImageProcessor"
+              target="_blank"
+              >Image Manipulator</a
+            >
+            |
+            <a
+              href="https://github.com/amaan-on-compsci/DisplayWaveform"
+              target="_blank"
+              >Waveform Reader and Renderer</a
+            >
+            |
+            <a href="https://github.com/CMPT276-Project" target="_blank"
+              >Trivia Game WebApp</a
+            >
+            | Can be found on my
+            <a href="https://github.com/amaan-on-compsci" target="_blank"
+              >GitHub</a
+            >
+          </p>
+        </div>
+      </section>
+      <section id="volunteering">
+        <h1>Volunteering</h1>
+        <p>
+          I've taken a couple opportunities during my first 2 years at
+          university by joining a student led tech support program known as IT
+          Squad at Fraser International College where I then became a manager
+          and helped students, professors and staff alike with all their
+          technical hurdles. Facilitated prayer spaces for the Muslim community
+          on campus and supported events by joining the SFU Muslim Students'
+          Association as a General Executive.
+        </p>
+      </section>
+    </div>
+    <section id="socials">
+      <h1>Social Media</h1>
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/mohammad-amaan-khan-505b13279/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/amaan-on-compsci" target="_blank"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <p>&copy; 2023 Mohammad Amaan Khan. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
