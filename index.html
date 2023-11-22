@@ -17,8 +17,8 @@
         margin: 0;
         padding: 0;
         overflow-y: scroll;
-        background-color: #f2f2f2; 
-        background-image: url('/images/skills.jpg'); 
+        background-color: #f2f2f2;
+        background-image: url("/images/background.jpg");
         background-size: cover;
       }
 
@@ -42,29 +42,29 @@
 
       .container {
         width: 80%;
-        margin: 20px auto; 
-        background-color: rgb(255, 255, 255); 
-        border-radius: 15px; 
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+        margin: 20px auto;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
       }
 
       section {
-        padding: 30px 20px; 
-        text-align: left; 
+        padding: 30px 20px;
+        text-align: left;
       }
 
       h1 {
         color: #000000;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
       }
 
       h2 {
         color: #ffffff;
-        margin-bottom: 20px
+        margin-bottom: 20px;
       }
 
       p {
-        line-height: 1.6; 
+        line-height: 1.6;
       }
 
       img {
@@ -100,8 +100,11 @@
       .profile-container img {
         max-width: 100%;
         height: auto;
-        border-radius: 50%;
+        border-radius: 10px; 
         margin-top: 20px;
+        object-fit: cover; 
+        width: 500px; 
+        height: 500px; 
       }
 
       .skills-container,
@@ -110,31 +113,44 @@
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
+        margin-bottom: -20px;
       }
 
       .project-container img {
         max-width: 100%;
         height: auto;
-        margin: 20px;
+        margin: 10px;
         border-radius: 15px;
+        margin-bottom: -50px;
       }
 
       #socials {
         text-align: center;
-        margin-top: 20px; /* Adjust the margin as needed */
+        margin-top: 20px;
       }
-      
+
       #socials ul {
         list-style-type: none;
         padding: 0;
         margin: 0;
       }
-      
+
       #socials ul li {
         display: inline;
         margin-right: 20px;
       }
-      
+
+      nav a,
+      #socials a {
+        color: #fff; 
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover,
+      #socials a:hover {
+        text-decoration: underline; 
+      }
     </style>
     <title>Amaan</title>
   </head>
@@ -166,12 +182,11 @@
       </section>
       <section id="skills">
         <h1>Skills</h1>
-        <div class="skills-container">
-        </div>
+        <div class="skills-container"></div>
         <p>
           C/C++ | Python | Java | HTML/CSS | JavaScript | React.js | <br />
           Self-motivated, determined, tenacious. Well acquainted with
-          technology.
+          technology. (I currently don't have a resume so I didn't link anything here)
         </p>
       </section>
       <section id="projects">
@@ -229,10 +244,10 @@
           >
         </li>
         <li>
-            <a href="https://www.instagram.com/amaan.mp4/?hl=en" target="_blank"
-              >Instagram</a
-            >
-          </li>
+          <a href="https://www.instagram.com/amaan.mp4/?hl=en" target="_blank"
+            >Instagram</a
+          >
+        </li>
       </ul>
     </section>
     <footer>
