@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="/fonts/Nova_Flat/NovaFlat-Regular.ttf" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/images/wallhaven-28dqwx.jpg" type="image/x-icon" />
     <style>
       @font-face {
         font-family: "NovaFlat";
@@ -17,7 +17,9 @@
         margin: 0;
         padding: 0;
         overflow-y: scroll;
-        background-color: #f2f2f2; /* Light grey background color */
+        background-color: #f2f2f2; 
+        background-image: url('/images/skills.jpg'); 
+        background-size: cover;
       }
 
       nav {
@@ -56,6 +58,11 @@
         margin-bottom: 20px; 
       }
 
+      h2 {
+        color: #ffffff;
+        margin-bottom: 20px
+      }
+
       p {
         line-height: 1.6; 
       }
@@ -73,7 +80,7 @@
       }
 
       ul li {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
       }
 
       footer {
@@ -81,7 +88,6 @@
         color: rgb(255, 255, 255);
         text-align: center;
         padding: 1em 0;
-        position: fixed;
         width: 100%;
         bottom: 0;
       }
@@ -112,6 +118,23 @@
         margin: 20px;
         border-radius: 15px;
       }
+
+      #socials {
+        text-align: center;
+        margin-top: 20px; /* Adjust the margin as needed */
+      }
+      
+      #socials ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      #socials ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      
     </style>
     <title>Amaan</title>
   </head>
@@ -191,7 +214,7 @@
       </section>
     </div>
     <section id="socials">
-      <h1>Social Media</h1>
+      <h2>Social Media</h2>
       <ul>
         <li>
           <a
@@ -205,6 +228,11 @@
             >GitHub</a
           >
         </li>
+        <li>
+            <a href="https://www.instagram.com/amaan.mp4/?hl=en" target="_blank"
+              >Instagram</a
+            >
+          </li>
       </ul>
     </section>
     <footer>
